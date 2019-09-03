@@ -1,0 +1,161 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.borde{
+	border: 2px solid #dcdcdc;
+	/*padding: 10px;*/
+}
+.container{
+	width: 100%;
+	max-width: 2500px;
+}
+.navbar{
+	margin-top: 50px;
+	width: 80%;
+	background: rgba(256,256,256,0.9);
+	border-radius: 10px;
+	transition: all 0.8s ease;
+}
+.navbar-brand{
+	font-size: 14px;
+}
+
+.navbar img{
+	height: 50px;
+}
+body{
+	background-color: #DDE1E8;
+}
+.nav-link{
+	padding: 10px;
+	font-size: 20px;	
+	font-style: oblique;
+}
+.modal form input:focus:valid{
+	border-color: green;
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+}
+
+.modal form input:focus:invalid{
+	border-color: red;
+}
+
+.modal form input:valid{
+	border-color: green;
+}
+
+.modal form input:invalid{
+	border-color: red;
+}
+.fondo1{
+	height: 800px;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/g4.jpg);
+}
+.fondo1 img{
+	height: 100%;
+	width: 100%;
+}
+.letra{
+	font-size: 6em;
+	font-family: "Latin Modern Roman 10";
+	font-style: italic;
+}
+.bg-primari{
+	width: 100%;
+	margin-top: 0px;
+	border-radius: 0px;
+	background: #000000;
+}
+.al{
+	padding: 10px;
+}
+.social {
+	position: fixed; 
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 280px; /* Bajamos la barra 200px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+ 
+	.social ul {
+		list-style: none;
+	}
+ 
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: 
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+	.social ul li a:hover {
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+.letrap{
+	font-size: 30px;
+	font-style: italic;
+	font-family:  "Latin Modern Roman 10";
+}
+.col-12 iframe{
+	width: 100%;
+}
+.tipog1{
+	font-family: "Latin Modern Roman 10";
+	font-style: italic;
+}
+
+.cc0{
+	width: 33.3%;
+	float: left;
+	font-style: italic;
+	font-size: 12px;
+}
+.cc0 a i{
+	font-size: 15px;
+}
+.kkl{
+	padding: 20px;
+	background-color:#4E4E4F;
+	height: 100px;
+	color: white;
+}
+.modal{
+	transition: 0.2s;
+
+}
+.ah{
+	margin-top: 20px
+}
+
+.lo{
+	height: 680px;
+}
+.tipog12{
+	font-family: "Latin Modern Roman 10";
+	font-style: italic;
+	font-size: 70px;
+}
+
+.fb{
+	background: #1955CC;
+}
+.tite{
+	background: #4BA1E1;
+}
+.mese{
+	background: #EE65A3;
+}
+.gmai{
+	background: #A90C0C;
+}
+
+.tmg{
+	font-size: 20px;
+}
+
