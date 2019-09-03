@@ -1,12 +1,134 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"  
+      xmlns:a ="http://xmlns.jcp.org/jsf/passthrough" 
+      xmlns:f ="http://xmlns.jcp.org/jsf/core" >
+  
     <h:head>
-        <title>Facelet Title</title>
+    
+        <title>Estilos y confecciones Antony</title>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/fontawesome-all.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" class="redondeo-img" type="text/css" href="img/logo.png"/>
+        <link href="resources/css/estilosindexes.css" rel="stylesheet" type="text/css"/>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top container-fluid text-center" id="menu">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"/>
+            <a class="navbar-brand" href="">  <img src="resources/images/logo.PNG" alt=""/>E y A  </a>
+           		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active mr-md-4">
+					<a class="nav-link" href="">Inicio<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item mr-md-4">
+					<a class="nav-link" href="html/Nosotros.html">Nosotros</a>
+				</li>
+				<li class="nav-item dropdown mr-md-4">
+					<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Servicios</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="html/arreglos.html">Arreglos</a>
+							<a class="dropdown-item" href="html/Confecciones.html">Confeciones</a>
+                                                </div>
+				</li>
+				<li class="nav-item mr-md-4">
+					<a target="_blank" class="nav-link" href="#registro" data-toggle="modal" tabindex="-1" aria-disabled="true">Registrarse</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#inicio-sesion" data-toggle="modal" tabindex="-1" aria-disabled="true">  <button class="btn btn-outline-success" type="button">Ingresar</button></a>
+				</li>
+			</ul>
+		</div>
+            <!-- registro-->
+                <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title ml-auto" id="exampleModalLabel">Registro</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h:form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4">Nombre(s)</label>
+									<h:inputText class="form-control" id="inputEmail4" a:placeholder="Nombres" required a:pattern="[a-zA-Z]{1,25}"/>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword4">Apellidos</label>
+									<input type="text" class="form-control" id="inputPassword4" placeholder="Apellidos"  required pattern="[a-zA-Z]{1,25}"/>
+								</div>
+							</div>	
+							<div class="form-group">
+								<label for="inputAddress">N° Identificación</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="ejemplo@correo.com" required />
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Correo electrónico</label>
+								<input type="Emial" class="form-control" id="inputAddress2" placeholder="ejemplo@correo.com" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
+							</div>
+
+							<div class="form-row">
+							<div class="form-group col-md-8">
+								<label for="inputAddress2">Dirección</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="Cl / Cra # xx - xx. Barrio xxxxx" required pattern="[a-zA-Z0-9_]{5,20}"/>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputTel">Telefono</label>
+								<input type="text" class="form-control" id="pais" placeholder="00000" required pattern="[0-9_]{7,15}"/>
+							
+								</div>							
+							</div>
+							<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputAddress2">contraseña</label>
+								<input type="password" class="form-control" id="inputAddress2" placeholder="*******" required pattern="[a-zA-Z0-9_]{5,20}"/>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputTel">Confirmar contraseña</label>
+								<input type="password" class="form-control" id="inputAddress2" placeholder="*******" required pattern="[a-zA-Z0-9_]{5,20}"/>
+							
+								</div>							
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck">
+									<label class="form-check-label" for="gridCheck" requiered>
+										Acepta términos y condiciones
+									</label>
+								</div>
+							</div>
+							<div class="form-group text-center m-0">
+								<button type="submit" class="btn btn-primary mt-3" onclick="valida2();">Registrarse
+								</button>
+							</div>
+						</h:form>
+					</div>					
+				</div>
+			</div>
+		</div>
+        </nav>
+        
+        
+        
+        
+        <script src="resources/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+        <script src="resources/js/popper.min.js" type="text/javascript"></script>
+        <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="resources/js/scripts.js" type="text/javascript"></script>
+        <script src="resources/js/sweetalert.min.js" type="text/javascript"></script>
+        <script src="resources/js/sroll.js" type="text/javascript"></script>
     </h:body>
 </html>
 
