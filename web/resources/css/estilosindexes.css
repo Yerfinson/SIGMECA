@@ -55,7 +55,8 @@ body{
 	width: 100%;
 	background-size: cover;
 	background-position: center;
-	background-image: url(../img/g4.jpg);
+	background-image: url(../images/g4.jpg);
+        
 }
 .fondo1 img{
 	height: 100%;

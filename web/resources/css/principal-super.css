@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*Clases especiales*/
+.borde{
+	border: 1px solid gray;
+}
+.migas {
+	color: white;
+	background: blue;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	position: fixed;
+}
+.migas a{
+	color:white ;
+}
+
+body{
+	background: white;
+}
+.migas ul {
+	padding: 5px;
+	display: inline;
+}
+
+.migas ul li {
+	list-style: none;
+	display: inline;
+
+}
+.espacio{
+	float: left;
+	width: 100%;
+	height: 80px;
+}
+
+/*Cuerpo*/
+.fondo{
+	margin-top: 30px;
+	text-align: center;
+}
+.fondo img{
+	width: 80%;
+	height: 90%;
+	padding: 10px;
+}
+
+.fondo h1{
+	font-style: italic;
+	text-align: center;
+	color: black;
+	padding: 2px;
+}

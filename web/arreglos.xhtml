@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:a ="http://xmlns.jcp.org/jsf/passthrough" 
+      xmlns:f ="http://xmlns.jcp.org/jsf/core" >
+   <h:head>
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+       <title>Estilos y confecciones Antony-Arreglos</title>
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/fontawesome-all.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" class="redondeo-img" type="text/css" href="resources/images/logo.PNG"/>
+        <link href="resources/css/estilosindexes2.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top container-fluid text-center" id="menu">        
+            <a class="navbar-brand" href="">  <img src="resources/images/logo.PNG" alt=""/>E y A  </a>
+           		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item mr-md-4">
+                                    <a class="nav-link" href="index.xhtml">Inicio<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item mr-md-4">
+                                    <a class="nav-link" href="Nosotros.xhtml">Nosotros</a>
+				</li>
+				<li class="nav-item dropdown mr-md-4 active">
+					<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Servicios</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item active" href="arreglos.xhtml">Arreglos</a>                                                        
+                                                        <a class="dropdown-item" href="Confecciones.xhtml">Confeciones</a>
+                                                </div>
+				</li>
+				<li class="nav-item mr-md-4">
+					<a target="_blank" class="nav-link" href="#registro" data-toggle="modal" tabindex="-1" aria-disabled="true">Registrarse</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#inicio-sesion" data-toggle="modal" tabindex="-1" aria-disabled="true">  <button class="btn btn-outline-success" type="button">Ingresar</button></a>
+				</li>
+			</ul>
+		</div> 
+        </nav>
+        <!-- registro-->
+                <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title ml-auto" id="exampleModalLabel">Registro</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h:form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4">Nombre(s)</label>
+                                                                        <input class="form-control" id="txtnombre" name="txtnom" placeholder="Nombres" required="" pattern="[a-zA-Z]{1,25}"/>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword4">Apellidos</label>
+									<input type="text" class="form-control" id="txtapellido" name="txtape" placeholder="Apellidos"  required="" pattern="[a-zA-Z]{1,25}"/>
+								</div>
+							</div>	
+							<div class="form-group">
+								<label for="inputAddress">N° Identificación</label>
+								<input type="text" class="form-control" id="txtide" name="txtidentificacion" placeholder="ejemplo@correo.com" required="" />
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Correo electrónico</label>
+								<input type="Emial" class="form-control" id="txtmail" name="txtEmail" placeholder="ejemplo@correo.com" required="" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
+							</div>
+
+							<div class="form-row">
+							<div class="form-group col-md-8">
+								<label for="inputAddress2">Dirección</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="Cl / Cra # xx - xx. Barrio xxxxx" required="" pattern="[a-zA-Z0-9_]{5,20}"/>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputTel">Telefono</label>
+								<input type="text" class="form-control" id="pais" placeholder="00000" required="" pattern="[0-9_]{7,15}"/>
+							
+								</div>							
+							</div>
+							<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="inputAddress2">contraseña</label>
+								<input type="password" class="form-control" id="inputAddress2" placeholder="*******" required="" pattern="[a-zA-Z0-9_]{5,20}"/>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="inputTel">Confirmar contraseña</label>
+								<input type="password" class="form-control" id="inputAddress2" placeholder="*******" required="" pattern="[a-zA-Z0-9_]{5,20}"/>
+							
+								</div>							
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck" requiered=""/>
+									<label class="form-check-label" for="gridCheck">
+										Acepta términos y condiciones
+									</label>
+								</div>
+							</div>
+							<div class="form-group text-center m-0">
+								<button type="submit" class="btn btn-primary mt-3" onclick="valida2();">Registrarse
+								</button>
+							</div>
+						</h:form>
+					</div>					
+				</div>                            
+			</div>
+		</div>
+                <!--ingreso-->
+                <div class="modal fade" id="inicio-sesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title ml-auto" id="exampleModalLabel">Inicia Sesión</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<div class="form-group">
+								<label for="emailIngreso">Usuario</label>
+								<input type="num" class="form-control" id="emailIngreso" aria-describedby="emailHelp" placeholder="ID EJ:12345" required="" pattern="[0-9_]{1,10}"/>
+							</div>
+							<div class="form-group">
+								<label for="passIngreso">Contraseña</label>
+								<input type="password" class="form-control" id="passIngreso" placeholder="password" required="" pattern="[A-Za-z0-9]{5,8}" title="Escriba entre 5 y 8 caracteres"/>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+								<label class="form-check-label" for="exampleCheck1">Recordar mi cuenta</label>
+							</div>	
+							<div class="form-group">
+								<a href="#Cambio-contrasena" data-toggle="modal">olvide mi contraseña</a>
+							</div>						
+							<div class="form-group text-center m-0">
+								<button type="button" class="btn btn-primary mt-3" onclick="validar();">Enviar
+								</button>
+							</div>
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>
+                <!--Cambio contrasena-->
+		<div class="modal fade" id="Cambio-contrasena" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title ml-auto" id="exampleModalLabel">Olvido de contraseña</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="">
+							<div class="form-group">
+								<label for="emailIngres">Ingrese su correo electronico</label>
+								<input type="email" class="form-control" id="emailIngres" aria-describedby="emailHelp"  placeholder="user@correo.com" required="" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,20}"/>
+							</div>
+							<div class="form-group text-center m-0">
+								<button type="button" class="btn btn-primary mt-3" onclick="validar7();">Enviar
+								</button>
+							</div>
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>
+               <!-- Encabezado o header-->
+                <div>
+                        <div class="fondo1 container-fluid d-flex justify-content-center align-items-center">
+                        <div class="text-center text-white">
+                                <p class="display letra">Arreglos</p>
+                        </div>
+                        </div>
+                </div>
+	<!-- Fin encabezado-->
+        
+        <!--Comienzo cotenido-->
+<div class="container ah row d-flex justify-content-center align-items-center">
+	<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/Camiseta.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para camisetas</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de camisetas</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/Pantalon.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Pantalon</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Pantalones</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/chauqueta.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Chaquetas</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalC">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalC" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Chaquetas</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/sweters.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Swetters</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCe">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Swetters</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/blazer.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Blazer</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCen">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCen" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Blazer's</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/Chandal.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Chandal</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en esta prenda si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCent">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCent" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Chandal</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/Dama.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos Prendas-Dama</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en prendas de todo tipo.forma, estilo y color para las bellas damas.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#examp">
+						Saber mas..
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="examp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Prendas para dama</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/caballero.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos Prendas-Caballero</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo en prendas de todo tipo.forma, estilo y color para los apuestos caballeros.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exam">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exam" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Prendas para Hombre</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="card mb-3 col-12 ml-5" style="max-width: 540px;">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+                            <img src="resources/images/co4.jpg" class="card-img" alt="..."/>
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title">Arreglos para Prendas elegantes</h5>
+					<p class="card-text">Realizamos cualquier tipo de Arreglo para estas prendas, si desea conocer un Ejemplo de estos precione el boton de la parte inferior.</p>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exa">
+						Saber mas...
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Arreglos de Prendas elegantes y formales</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+        
+        <div class="col-12  mb-5">
+
+
+			<div class="row mb-5">
+              <div class="col-12 text-center">
+               <h1 class="tipog1">Visitanos tenemos mucho mas que ofrecerte...</h1>
+				<iframe style="height: 700px; border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5048595920266!2d-74.10186508767691!3d4.681956670763944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b6b55e5758f%3A0x949c10f2219a7bae!2sEstilos+Y+Confecciones+Antony!5e0!3m2!1ses!2sco!4v1559191347814!5m2!1ses!2sco" width="800" height="600" frameborder="0"  allowfullscreen=""></iframe>
+              </div>
+            </div>
+        </div>
+		
+            <!-- Footer o pie de pagina -->
+     <div class="kkl">
+      <div class=" cc0 text-center">
+        <p>Direccion:  Cll 66 a #72-18</p>
+				<p>Telefono:  4900236</p>
+				
+      </div>
+       <div class="cc0 text-center">
+       			<p>Celular:  3125644776</p>
+       			<p><a href=""><i class="fab fa-facebook-messenger"></i></a><a href=""><i class="fab fa-instagram ml-2"></i></a><a href=""><i class="fab fa-facebook-square ml-2"></i></a></p>
+      </div>
+        <div class="cc0 text-center">
+       			<p>Todos los derechos reservdos a:</p>
+       			<p>Kadyraji</p>
+      </div>
+  </div>
+	
+        
+        
+        
+        <script src="resources/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+        <script src="resources/js/popper.min.js" type="text/javascript"></script>
+        <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="resources/js/scripts.js" type="text/javascript"></script>
+        <script src="resources/js/sweetalert.min.js" type="text/javascript"></script>
+        <script src="resources/js/sroll.js" type="text/javascript"></script>
+    </h:body>
+</html>
+
