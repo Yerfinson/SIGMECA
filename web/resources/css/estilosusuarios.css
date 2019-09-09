@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: gray
+}
+.card{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.card-body{
+	color: black;
+}
+.card-title{
+	color: black;
+	font-size: 35px;
+	font-style: italic;
+}
+
+.card form input:focus:valid{
+	border-color: green;
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+}
+
+.card form input:focus:invalid{
+	border-color: red;
+}
+
+.card form input:valid{
+	border-color: green;
+}
+
+.card form input:invalid{
+	border-color: red;
+}

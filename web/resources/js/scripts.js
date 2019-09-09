@@ -4,7 +4,7 @@ function validar(){
 	var pass = document.getElementById('passIngreso').value;
 
 	if (num == '1007161220' && pass == "12345678") {
-		window.location.href = '../SIGMECA/si/supervisor.html';		
+		window.location.href = '../../../../SIGMECA/app/supervisor.xhtml';		
 	}
 	else if (num == '12345678' && pass == "12345") {
 		window.location.href = '../SIGMECA/si/cliente.html'
