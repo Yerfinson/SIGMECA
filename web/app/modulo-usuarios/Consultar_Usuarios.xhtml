@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"      
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Consultar Usuarios</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="../../resources/dataTables/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/dataTables/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/dataTables/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        
+        <div class="container-fluid">
+        <div class="row">
+            <h:form class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../principal-super.xhtml" target="iframe_principal">Inicio</a></li>
+                        <li class="breadcrumb-item active">Consultar Usuarios</li>
+                    </ol>
+                </nav>
+            </h:form>
+            </div>
+        </div>
+        
+         <div class="container contenido">
+
+        <div class="row">
+            <div class="col-md-12 inicio text-center">
+                <h1 style="">Registro de usuarios</h1>
+                <hr/>
+            </div>
+        </div>
+
+
+        <div class="row py-3 px-lg-5">
+            <div class="col-md-12">
+                <h:form>
+                <h:dataTable id="example" class=" table table-responsive-sm table-hover table-bordered" cellspacing="0" width="100%">
+          <thead>
+              <h:column>
+                    <!--header -->
+                    <f:facet name="header" >Fecha de inscripcion </f:facet>>
+                      <!--dato -->
+                      <h:outputText id="nombre" value="Juan"></h:outputText>               
+              </h:column>>
+        </thead>
+        <tbody>
+            <!--
+            <tr>
+                <td>20/06/2019</td>
+                <td>10100055288</td>
+                <td>Maria Pilar</td>
+                <td>Perez Cardona</td>
+                <td>3112878720</td>
+                <td>Calle 123</td>
+            </tr>
+            <tr>
+                <td>22/06/2019</td>
+                <td>10100055252</td>
+                <td>Rosario tijers</td>
+                <td>Del socorro</td>
+                <td>3112878458</td>
+                <td>Calle 456</td>
+            </tr>
+            <tr>
+                <td>23/06/2019</td>
+                <td>101008416164</td>
+                <td>Luid Enrrique</td>
+                <td>Salasar obviedo</td>
+                <td>31128454641</td>
+                <td>Calle 678</td>
+            </tr>
+            <tr>
+                <td>25/06/2019</td>
+                <td>101000646488</td>
+                <td>Karen stefany</td>
+                <td>Jimenez Perez</td>
+                <td>7964365653</td>
+                <td>Calle 1011</td>
+            </tr>
+            <tr>
+                <td>24/06/2019</td>
+                <td>101056446</td>
+                <td>Kemuel Gabriel</td>
+                <td>Salgado Betancur</td>
+                <td>31127646464</td>
+                <td>Calle 321</td>
+            </tr>
+           <tr>
+                <td>30/06/2019</td>
+                <td>10100546488</td>
+                <td>Juan David</td>
+                <td>Castro Obviedo</td>
+                <td>3112879420</td>
+                <td>Calle 685</td>
+            </tr>
+                        <tr>
+                <td>20/06/2019</td>
+                <td>10100055288</td>
+                <td>Maria Pilar</td>
+                <td>Perez Cardona</td>
+                <td>3112878720</td>
+                <td>Calle 123</td>
+            </tr>
+            <tr>
+                <td>22/06/2019</td>
+                <td>10100055252</td>
+                <td>Rosario tijers</td>
+                <td>Del socorro</td>
+                <td>3112878458</td>
+                <td>Calle 456</td>
+            </tr>
+            <tr>
+                <td>23/06/2019</td>
+                <td>101008416164</td>
+                <td>Luid Enrrique</td>
+                <td>Salasar obviedo</td>
+                <td>31128454641</td>
+                <td>Calle 678</td>
+            </tr>
+            <tr>
+                <td>25/06/2019</td>
+                <td>101000646488</td>
+                <td>Karen stefany</td>
+                <td>Jimenez Perez</td>
+                <td>7964365653</td>
+                <td>Calle 1011</td>
+            </tr>
+            <tr>
+                <td>24/06/2019</td>
+                <td>101056446</td>
+                <td>Kemuel Gabriel</td>
+                <td>Salgado Betancur</td>
+                <td>31127646464</td>
+                <td>Calle 321</td>
+            </tr>
+           <tr>
+                <td>30/06/2019</td>
+                <td>10100546488</td>
+                <td>Juan David</td>
+                <td>Castro Obviedo</td>
+                <td>3112879420</td>
+                <td>Calle 685</td>
+            </tr>
+            <tr>
+                <td>20/06/2019</td>
+                <td>10100055288</td>
+                <td>Maria Pilar</td>
+                <td>Perez Cardona</td>
+                <td>3112878720</td>
+                <td>Calle 123</td>
+            </tr>
+            <tr>
+                <td>22/06/2019</td>
+                <td>10100055252</td>
+                <td>Rosario tijers</td>
+                <td>Del socorro</td>
+                <td>3112878458</td>
+                <td>Calle 456</td>
+            </tr>
+            <tr>
+                <td>23/06/2019</td>
+                <td>101008416164</td>
+                <td>Luid Enrrique</td>
+                <td>Salasar obviedo</td>
+                <td>31128454641</td>
+                <td>Calle 678</td>
+            </tr>
+            <tr>
+                <td>25/06/2019</td>
+                <td>101000646488</td>
+                <td>Karen stefany</td>
+                <td>Jimenez Perez</td>
+                <td>7964365653</td>
+                <td>Calle 1011</td>
+            </tr>
+            <tr>
+                <td>24/06/2019</td>
+                <td>101056446</td>
+                <td>Kemuel Gabriel</td>
+                <td>Salgado Betancur</td>
+                <td>31127646464</td>
+                <td>Calle 321</td>
+            </tr>
+    
+           <tr>
+                <td>30/06/2019</td>
+                <td>10100546488</td>
+                <td>Juan David</td>
+                <td>Castro Obviedo</td>
+                <td>3112879420</td>
+                <td>Calle 685</td>
+            </tr>
+            <tr>
+                <td>20/06/2019</td>
+                <td>10100055288</td>
+                <td>Maria Pilar</td>
+                <td>Perez Cardona</td>
+                <td>3112878720</td>
+                <td>Calle 123</td>
+            </tr>
+            <tr>
+                <td>22/06/2019</td>
+                <td>10100055252</td>
+                <td>Rosario tijers</td>
+                <td>Del socorro</td>
+                <td>3112878458</td>
+                <td>Calle 456</td>
+            </tr>
+            <tr>
+                <td>23/06/2019</td>
+                <td>101008416164</td>
+                <td>Luid Enrrique</td>
+                <td>Salasar obviedo</td>
+                <td>31128454641</td>
+                <td>Calle 678</td>
+            </tr>
+            <tr>
+                <td>25/06/2019</td>
+                <td>101000646488</td>
+                <td>Karen stefany</td>
+                <td>Jimenez Perez</td>
+                <td>7964365653</td>
+                <td>Calle 1011</td>
+            </tr>
+            <tr>
+                <td>24/06/2019</td>
+                <td>101056446</td>
+                <td>Kemuel Gabriel</td>
+                <td>Salgado Betancur</td>
+                <td>31127646464</td>
+                <td>Calle 321</td>
+            </tr>
+           <tr>
+                <td>30/06/2019</td>
+                <td>10100546488</td>
+                <td>Juan David</td>
+                <td>Castro Obviedo</td>
+                <td>3112879420</td>
+                <td>Calle 685</td>
+            </tr>
+           -->
+        </tbody>
+                </h:dataTable>
+                    </h:form>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        <script src="../../resources/dataTables/js/jquery.min.js" type="text/javascript"></script>
+        <script src="../../resources/dataTables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+        <script src="../../resources/dataTables/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../resources/dataTables/js/script.js" type="text/javascript"></script>
+        <script src="../../resources/dataTables/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    </h:body>
+</html>

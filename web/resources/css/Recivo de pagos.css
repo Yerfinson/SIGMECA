@@ -5,20 +5,14 @@
 }
 
 body{
-	background-color: gray
+	background-color: gray;
 }
 .card{
 	margin-top: 60px;
 	text-align: center;
+	width: 100%;
+}
 
-}
-.card img{
-	margin-top: 50px;
-	
-}
-.card h3{
-	margin-top: 50px;
-}
 .card-body{
 	color: black;
 }
@@ -26,3 +20,4 @@ body{
 .gl{
 	color: #4848D2;
 }
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html" 
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Crear Usuario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="../../resources/css/bootstrap1.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../resources/css/fontawesome-all.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" class="redondeo-img" type="text/css" href="../../resources/images/logo.PNG"/>       
+        <link href="../../resources/css/estilosusuarios.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+       <div class="container-fluid d-flex justify-content-center align-items-center">
+		
+		<div class="row">
+			<div class="col-12 ml-md-auto col-lg-12 mb-md-5">
+				<!-- Artículos -->
+				<div class="card text-white mb-4" style="max-width: 50em;">
+					<div class="card-header">
+						<h5 class="card-title ml-auto" id="exampleModalLabel">Registro de Usurios</h5>
+					</div>
+					<div class="card-body">
+						<h:form>
+							<div class="form-row">
+								<div class="form-group col-md-6 mb-4">
+                                                                    <h:outputLabel for="nombres" value="Nombre(s)"/>
+                                                                    <h:inputText  class="form-control" id="Nombres" a:placeholder="Nombres" required="" a:pattern="[a-zA-Z]{1,25}"></h:inputText>
+								</div>
+								<div class="form-group col-md-6">
+                                                                    <h:outputLabel for="apellidos" value="Apellido(s)"/>
+                                                                    <h:inputText a:type="text" class="form-control" id="Apellidos" a:placeholder="Apellidos"  required="" a:pattern="[a-zA-Z]{1,25}"></h:inputText>
+								</div>
+							</div>	
+							<div class="form-group mb-5">
+                                                                <h:outputLabel for="Nidentificacion" value="N° Identificacion"/>
+                                                                <h:inputText a:type="text" class="form-control" id="Nidentificacion" a:placeholder="ID" required="" a:pattern="[0-9_]{1,10}"></h:inputText>
+							</div>
+							<div class="form-group mb-5">
+                                                                <h:outputLabel for="correo" value="Correo electrónico"/>
+                                                                <h:inputText a:type="Emial" class="form-control" id="correo" a:placeholder="ejemplo@correo.com" required="" a:pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"></h:inputText>
+							</div>
+							<div class="form-group mb-5">
+                                                            <h:outputLabel for="direccion" value="Dirección"/>
+                                                            <h:inputText a:type="text" class="form-control" id="direccion" a:placeholder="Cl / Cra # xx - xx. Barrio xxxxx" required=""></h:inputText>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+                                                                    <h:outputLabel for="telefono" value="Telefono"/>
+                                                                    <h:inputText  class="form-control" id="telefono" a:placeholder="Entre 5 y 10 caracteres" required="" a:pattern="[0-9_]{5,15}"></h:inputText>
+								</div>		
+								<div class="form-group col-md-6">
+                                                                    <h:outputLabel for="cont-prov" value="Contraseña Provicional"/>
+                                                                    <h:inputText a:type="Password" class="form-control" id="cont-prov" a:placeholder="Entre 5 y 10 caracteres" required="" a:pattern="[a-zA-Z0-9_]{5,15}"></h:inputText>				
+								</div>
+								<div class="form-group col-md-9">
+                                                                    <h:outputLabel for="rol" value="Rol"/>
+									<select id="inputState" class="form-control">
+										<option selected="">Cliente</option>
+										<option selected="">Operario</option>
+										<option selected="">Supervisor</option>			
+										<option selected="">Seleccione una opción</option>
+									</select>
+								</div>						
+							</div>
+							<div class="form-group text-center">
+                                                            <h:commandButton value="Registrar Usuario" type="submit" class="btn btn-success mt-3" onclick="valida2();"/>								
+							</div>
+                                                </h:form>
+					</div>											
+				</div>					
+			</div>
+		</div>
+	</div>
+
+        <script src="../../resources/js/jquery-3.3.1.slim.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/popper.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../../resources/js/scripts.js" type="text/javascript"></script>
+        <script src="../../resources/js/sweetalert.min.js" type="text/javascript"></script>
+    </h:body>
+</html>
